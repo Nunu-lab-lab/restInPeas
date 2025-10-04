@@ -1,0 +1,317 @@
+[gd_scene load_steps=16 format=3 uid="uid://ct1pux5xpfj3m"]
+
+[ext_resource type="Script" uid="uid://nsifd0ddcc2s" path="res://scripts/start.gd" id="1_tn317"]
+[ext_resource type="Texture2D" uid="uid://den4k56aovyeq" path="res://assets/Background/Hills Layer 01.png" id="1_y16t7"]
+[ext_resource type="Texture2D" uid="uid://b304x13wcry48" path="res://assets/Background/Hills Layer 02.png" id="2_4ge6i"]
+[ext_resource type="Texture2D" uid="uid://bp2lqusckv02o" path="res://assets/Background/Hills Layer 03.png" id="3_8itgj"]
+[ext_resource type="Texture2D" uid="uid://7ugwf1bsa1uk" path="res://assets/Background/Hills Layer 04.png" id="4_tn317"]
+[ext_resource type="Texture2D" uid="uid://bqn8nuvu4n1vk" path="res://assets/Background/Hills Layer 05.png" id="5_m8nf6"]
+[ext_resource type="Texture2D" uid="uid://daffi1vlx50q0" path="res://assets/Background/Hills Layer 06.png" id="6_pgjjs"]
+[ext_resource type="FontFile" uid="uid://cqnoa8c08hk0h" path="res://assets/Fonts/HennyPenny-Regular.ttf" id="7_8itgj"]
+[ext_resource type="FontFile" uid="uid://co6y3cvb7k0aa" path="res://assets/Fonts/JotiOne-Regular.ttf" id="8_tn317"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8itgj"]
+bg_color = Color(0.892667, 0.819842, 0.714877, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+shadow_color = Color(0, 0, 0, 0.313726)
+shadow_size = 7
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tn317"]
+bg_color = Color(0.88676, 0.810745, 0.701075, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+shadow_color = Color(0, 0, 0, 0.431373)
+shadow_size = 7
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8nf6"]
+bg_color = Color(0.909804, 0.847059, 0.756863, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+shadow_color = Color(0, 0, 0, 0.211765)
+shadow_size = 7
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="Animation" id="Animation_tn317"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("startBtn:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(543, 237)]
+}
+
+[sub_resource type="Animation" id="Animation_8itgj"]
+resource_name = "intro"
+length = 1.35
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(1.2, 1.2), Vector2(0.9, 0.9), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("startBtn:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1, 1.2, 1.35),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(543, 307), Vector2(543, 237), Vector2(543, 217)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tn317"]
+_data = {
+&"RESET": SubResource("Animation_tn317"),
+&"intro": SubResource("Animation_8itgj")
+}
+
+[node name="Start" type="Control"]
+z_index = 7
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_tn317")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 649.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+texture = ExtResource("1_y16t7")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 1151.0
+offset_bottom = 650.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_4ge6i")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer3"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1154.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_8itgj")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer4"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_tn317")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer5"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_right = 1155.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_m8nf6")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer6"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_right = 1153.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_pgjjs")
+
+[node name="startBtn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 421.0
+offset_top = 384.0
+offset_right = 667.0
+offset_bottom = 455.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.672305, 3.54964e-06, 2.40654e-07, 1)
+theme_override_colors/font_color = Color(0.75339, 2.38247e-06, 5.77569e-07, 1)
+theme_override_colors/font_focus_color = Color(0.75339, 2.38247e-06, 5.77569e-07, 1)
+theme_override_colors/font_pressed_color = Color(0.599056, 3.74217e-06, 2.88785e-07, 1)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("8_tn317")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxFlat_8itgj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tn317")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8nf6")
+text = "Start Game"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_tn317")
+}
+autoplay = "intro"
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(543, 237)
+
+[node name="Label" type="Label" parent="Node2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -55.0
+offset_right = 309.0
+offset_bottom = 123.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.321569)
+theme_override_fonts/font = ExtResource("7_8itgj")
+theme_override_font_sizes/font_size = 90
+text = "Rest in Peas"
+horizontal_alignment = 1
+vertical_alignment = 1

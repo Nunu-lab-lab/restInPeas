@@ -1,0 +1,202 @@
+[gd_scene load_steps=14 format=3 uid="uid://b70ulk41hgrmr"]
+
+[ext_resource type="Script" uid="uid://pa10c3dvm2ih" path="res://scripts/login.gd" id="1_1u3ka"]
+[ext_resource type="Texture2D" uid="uid://den4k56aovyeq" path="res://assets/Background/Hills Layer 01.png" id="1_r3fp8"]
+[ext_resource type="Texture2D" uid="uid://b304x13wcry48" path="res://assets/Background/Hills Layer 02.png" id="2_bw5rt"]
+[ext_resource type="Texture2D" uid="uid://bp2lqusckv02o" path="res://assets/Background/Hills Layer 03.png" id="3_31byv"]
+[ext_resource type="Texture2D" uid="uid://7ugwf1bsa1uk" path="res://assets/Background/Hills Layer 04.png" id="4_1u3ka"]
+[ext_resource type="Texture2D" uid="uid://bqn8nuvu4n1vk" path="res://assets/Background/Hills Layer 05.png" id="5_wlyqo"]
+[ext_resource type="Texture2D" uid="uid://daffi1vlx50q0" path="res://assets/Background/Hills Layer 06.png" id="6_tbijj"]
+[ext_resource type="FontFile" uid="uid://cqnoa8c08hk0h" path="res://assets/Fonts/HennyPenny-Regular.ttf" id="7_31byv"]
+[ext_resource type="FontFile" uid="uid://co6y3cvb7k0aa" path="res://assets/Fonts/JotiOne-Regular.ttf" id="8_1u3ka"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_31byv"]
+bg_color = Color(0.894118, 0.819608, 0.713726, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 4
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1u3ka"]
+bg_color = Color(0.886275, 0.811765, 0.701961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 4
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlyqo"]
+bg_color = Color(0.909804, 0.847059, 0.756863, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 3
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbijj"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.812725, 0.182548, 0.0692128, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[node name="login" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1u3ka")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_right = 1153.0
+offset_bottom = 647.0
+texture = ExtResource("1_r3fp8")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer2"]
+offset_right = 1151.0
+offset_bottom = 650.0
+texture = ExtResource("2_bw5rt")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer3"]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("3_31byv")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer4"]
+offset_right = 1153.0
+offset_bottom = 650.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_1u3ka")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer5"]
+offset_right = 1155.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_wlyqo")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer6"]
+offset_right = 1154.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_tbijj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -66.0
+offset_right = 34.0
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Name" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_31byv")
+theme_override_font_sizes/font_size = 70
+text = "Enter Name:"
+
+[node name="nameInput" type="LineEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+placeholder_text = "Nour..."
+
+[node name="Age" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_31byv")
+theme_override_font_sizes/font_size = 70
+text = "Enter Age:"
+
+[node name="ageInput" type="LineEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+placeholder_text = "18..."
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.08
+
+[node name="loginBtn" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.670588, 0, 0, 1)
+theme_override_colors/font_color = Color(0.752941, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.752941, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.6, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("8_1u3ka")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_31byv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1u3ka")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wlyqo")
+text = "Confirm"
+
+[node name="ErrorLabel" type="Label" parent="."]
+visible = false
+z_index = 2
+layout_mode = 2
+offset_left = 390.5
+offset_top = 82.0
+offset_right = 761.5
+offset_bottom = 120.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_1u3ka")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_tbijj")

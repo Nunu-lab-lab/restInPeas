@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://cji1lf6dehy7n"]
+
+[ext_resource type="PackedScene" uid="uid://gciqob8x4p8x" path="res://scenes/player.tscn" id="1_014kd"]
+[ext_resource type="PackedScene" uid="uid://dvt0mmog367ys" path="res://scenes/tilemap_game.tscn" id="2_bswci"]
+
+[sub_resource type="GDScript" id="GDScript_rus8k"]
+script/source = "extends Node
+class_name FieldCursorComponent
+
+# Called when the node enters the scene tree for the first time.
+@export var grass_tilemap_layer: TileMapLayer
+@export var soil_tilemap_layer: TileMapLayer
+@export var terrain_set: int = 0
+@export var terrain: int = 1
+
+@onready var player: CharacterBody2D = get_tree().get_first_node_in_group(\"player\")
+
+var mouse_position: Vector2
+var cell_position: Vector2i
+var cell_source_id: int
+var local_cell_position: Vector2
+var distance: float
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed(\"dig\"):
+		pass
+	
+"
+
+[node name="Level1" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_014kd")]
+position = Vector2(-80, 41)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(1, -10)
+zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+
+[node name="FieldCursorComponent" type="Node" parent="."]
+script = SubResource("GDScript_rus8k")
+
+[node name="tilemapGame" parent="." instance=ExtResource("2_bswci")]

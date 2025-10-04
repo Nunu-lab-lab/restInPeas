@@ -1,0 +1,186 @@
+[gd_scene load_steps=15 format=3 uid="uid://c1dvqvhf6kbe6"]
+
+[ext_resource type="Texture2D" uid="uid://den4k56aovyeq" path="res://assets/Background/Hills Layer 01.png" id="1_mus41"]
+[ext_resource type="Texture2D" uid="uid://b304x13wcry48" path="res://assets/Background/Hills Layer 02.png" id="2_4v2j4"]
+[ext_resource type="Texture2D" uid="uid://bp2lqusckv02o" path="res://assets/Background/Hills Layer 03.png" id="3_sg6je"]
+[ext_resource type="Texture2D" uid="uid://7ugwf1bsa1uk" path="res://assets/Background/Hills Layer 04.png" id="4_dr7kd"]
+[ext_resource type="Texture2D" uid="uid://bqn8nuvu4n1vk" path="res://assets/Background/Hills Layer 05.png" id="5_2hdd7"]
+[ext_resource type="Texture2D" uid="uid://daffi1vlx50q0" path="res://assets/Background/Hills Layer 06.png" id="6_uo3on"]
+[ext_resource type="FontFile" uid="uid://co6y3cvb7k0aa" path="res://assets/Fonts/JotiOne-Regular.ttf" id="7_4v2j4"]
+[ext_resource type="Texture2D" uid="uid://bh3rdny23vck4" path="res://assets/characters/goblinNorm.png" id="8_nihmp"]
+[ext_resource type="Texture2D" uid="uid://ddtecxoknynme" path="res://assets/characters/goblinSelect.png" id="9_pgb7j"]
+[ext_resource type="Texture2D" uid="uid://c128wxwmep7vd" path="res://assets/characters/goblinHover.png" id="10_uc6sy"]
+[ext_resource type="Texture2D" uid="uid://bavf8gpgti86m" path="res://assets/characters/skeletonNorm.png" id="11_6qrjs"]
+[ext_resource type="Texture2D" uid="uid://b6b8nqj3w6jbq" path="res://assets/characters/skeletonSelect.png" id="12_mx7fs"]
+[ext_resource type="Texture2D" uid="uid://bsxppye1ujvss" path="res://assets/characters/skeletonHover.png" id="13_apnxn"]
+
+[sub_resource type="GDScript" id="GDScript_nihmp"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="characterChoosing" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_nihmp")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 649.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+texture = ExtResource("1_mus41")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 1151.0
+offset_bottom = 650.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_4v2j4")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer3"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1154.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_sg6je")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer4"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_dr7kd")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer5"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_right = 1155.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_2hdd7")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer6"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_right = 1153.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_uo3on")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_4v2j4")
+theme_override_font_sizes/font_size = 50
+text = "Pick your character"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("8_nihmp")
+texture_pressed = ExtResource("9_pgb7j")
+texture_hover = ExtResource("10_uc6sy")
+
+[node name="TextureButton2" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("11_6qrjs")
+texture_pressed = ExtResource("12_mx7fs")
+texture_hover = ExtResource("13_apnxn")
