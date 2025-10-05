@@ -41,3 +41,26 @@ position_smoothing_enabled = true
 script = SubResource("GDScript_rus8k")
 
 [node name="tilemapGame" parent="." instance=ExtResource("2_bswci")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = -23.0
+offset_top = -48.0
+offset_right = 66.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 7
+text = " متوسط درجة الحرارة في النهار:
+يناير 19.3
+فبراير 21.4
+مارس 25.4
+ابريل 30.8
+مايو 35.1
+يونيو 37.5
+يوليو 38.2
+اغسطس 37.7
+سبتمبر 34.7
+اكتوبر 31.3
+نوفمبر 25.8
+ديسمبر 21.2"
